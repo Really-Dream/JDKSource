@@ -15,6 +15,14 @@ import java.util.regex.Pattern;
  * Created by H.J
  * 2018/6/8
  */
+
+/**
+ * CharSequence类型，代表的是一个有序字符集合
+ * 实现了这个接口的类有：CharBuffer、String、StringBuffer、StringBuilder这个四个类
+ * 提供这个接口，有些处理String或者StringBuffer的类就不用重载了
+ *
+ * Comparable比较此对象与指定对象的顺序。如果该对象小于、等于或大于指定对象，则分别返回负整数、零或正整数。
+ */
 public final class String implements Serializable,Comparable<String>,CharSequence {
 
     private final char value[];
